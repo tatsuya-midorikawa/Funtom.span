@@ -14,4 +14,4 @@ module Memory =
     let p = NativePtr.stackalloc<'a> size |> NativePtr.toVoidPtr
     Span<'a>(p, size)
 
-  let inline ref (span: Span<'a>) = MemoryMarshal.GetReference span
+  let inline ref (span: Span<'a>) = &(MemoryMarshal.GetReference span)
