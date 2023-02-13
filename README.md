@@ -34,7 +34,7 @@ let span: Span<char> = Memory.stackalloca<char> 256
 let r: byref<char> = Memory.ref span
 ```
 
-### 2️⃣ SpanExtensions module
+### 2️⃣ SpanExtensions
 
 This extension to allow Span<'a> to be F# sliced.
 
