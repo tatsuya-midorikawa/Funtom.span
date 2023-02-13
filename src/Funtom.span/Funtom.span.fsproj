@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+		<LangVersion>Latest</LangVersion>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<Version>0.0.1</Version>
+		<Authors>midoliy</Authors>
+		<Company>midoliy</Company>
+		<Copyright>© 2023 Tatsuya Midorikawa. All rights rserved</Copyright>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageTags>midoliy,fsharp,Funtom,memory,span,alloc</PackageTags>
+		<PackageProjectUrl>https://github.com/tatsuya-midorikawa/Funtom.span</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/tatsuya-midorikawa/Funtom.span</RepositoryUrl>
+		<Description>
+			Funtom.span is a library that provides functions related to memory allocation.
+		</Description>
+		<PackageIcon>phantom.png</PackageIcon>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<None Include="..\..\assets\phantom.png">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<None Include="..\..\README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="SpanExtensions.fs" />
+    <Compile Include="Memory.fs" />
+  </ItemGroup>
+
+</Project>
